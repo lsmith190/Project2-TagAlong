@@ -2,6 +2,7 @@ const mongoose = require("./connection.js");
 const Owner = require("../models/owner.js");
 const Pet = require("../models/pet.js");
 const Restaurant = require("../models/restaurant.js");
+//creates Schema for each model
 
 const lindsey = new Owner({
     name: "Lindsey Smith",

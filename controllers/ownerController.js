@@ -14,15 +14,18 @@ const ownerController = {
     //         res.redirect("/")
     //     })
 
-    //below redirects to page that now says "Show owners here"
-    create: ('/owners', (req, res) => {
-        res.send('Show all owners')
-    }),
-    show: (req, res) => {
-        console.log('Show owners')
+    create: (req, res) => {
+        Owner.create(req.body).then(owner => {
+            res.redirect("/owner")
+        })
     },
+    show: ('/owners', (req, res) => {
+        res.send('Show owners here')
+    }),
+
     edit: ('/edit', (req, res) => {
-        res.send('Edit owners here')
+        // res.send('Edit owners here')
+        res.render('edit')
     }),
     update: (req, res) => {
         console.log('updated owner')

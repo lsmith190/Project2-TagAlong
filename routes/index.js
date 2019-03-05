@@ -5,14 +5,6 @@ router.get('/', function(req, res, next) {
     res.render('index', { title: 'Tag Along' });
 });
 
-router.get('/owners', (req, res) => {
-    res.send('Show owners here');
-});
-
-router.get('/edit', (req, res) => {
-    res.send('Edit owners here');
-});
-
 const ownerController = require('../controllers/ownerController.js')
 
 router.get('/', ownerController.index)

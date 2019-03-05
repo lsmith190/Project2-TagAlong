@@ -8,7 +8,18 @@ const lindsey = new Owner({
     name: "Lindsey Smith",
     age: 24,
     city: "Atlanta, GA",
-    petName: "Kenzie"
+    petName: "Kenzie",
+    handle: "N/A",
+    imgLink: ""
+});
+
+const betty = new Owner({
+    name: "Betty Rozema",
+    age: 25,
+    city: "Atlanta, GA",
+    petName: "Bando",
+    handle: "themamabetty",
+    imgLink: ""
 });
 
 // const kenzie = new Pet({
@@ -25,3 +36,11 @@ const lindsey = new Owner({
 //     rating: 4.4,
 //     patio: true,
 // });
+
+Owner.remove({})
+    .then(() => Owner.create([lindsey, betty]))
+    .then(() => {
+        console.log("seeded successfully");
+        mongoose.connection.close();
+    })
+    .catch(err => console.log(err, "error!"));

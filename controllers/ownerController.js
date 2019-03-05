@@ -2,13 +2,17 @@ const Owner = require('../models/owner.js')
 
 const ownerController = {
     index: (req, res) => {
-        console.log('Shops here')
+        Owner.find().then(owners => {
+            res.render('index', { owners })
+        })
     },
     new: (req, res) => {
         res.render('new')
     },
     create: (req, res) => {
-        console.log('Create new owner')
+        Owner.create(req.body).then(owner => {
+            res.redirect("/")
+        })
     },
     show: (req, res) => {
         console.log('Show owners')

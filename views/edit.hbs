@@ -1,0 +1,27 @@
+<form action="/{{owner.id}}?_method=PUT" method="POST">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" value="{{owner.name}}">
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" value="{{owner.age}}">
+    </div>
+    <div>
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" value={{owner.city}}>
+    </div>
+     <div>
+        <label for="petName">Pet Name</label>
+        <input type="text" name="petName" id="petName" value={{owner.petName}}>
+    </div>
+    <div>
+        <label for="handle">Social Media Handle</label>
+        <input type="text" name="handle" id="handle" value={{owner.handle}}>
+    </div>
+     <div>
+        <label for="image">Image Link</label>
+        <input type="text" name="imgLink" id="imgLink" value={{owner.imgLink}}>
+    </div>
+    <input type="submit" value="Submit">
+</form>

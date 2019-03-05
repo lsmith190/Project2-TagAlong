@@ -2,14 +2,27 @@
     padding: 50px;
     margin: 50px;
     text-align: center;
+    color: white;
+    font-size: 25px;
 }
 
 .homeBtn {
     text-align: center;
-    color: black;
+    color: white;
+    font-family: 'Indie Flower', cursive;
 }
 
 .ownerBtn {
     text-align: center;
     padding: 100px 100px 100px 100px;
+}
+
+img {
+    border-radius: 50%;
+    padding: 30px;
+}
+
+body {
+    background-color: #49db00;
+    background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
 }

@@ -1,7 +1,7 @@
 const mongoose = require("./connection.js");
 const Owner = require("../models/owner.js");
 // const Pet = require("../models/pet.js");
-// const Restaurant = require("../models/restaurant.js");
+const Restaurant = require("../models/restaurant.js");
 //creates Schema for each model
 
 const lindsey = new Owner({
@@ -30,15 +30,23 @@ const betty = new Owner({
 //     ownerName: "Lindsey Smith"
 // });
 
-// const midway = new Restaurant({
-//     name: "The Midway",
-//     address: "552 Flat Shoals Ave SE, Atlanta, GA 30316",
-//     rating: 4.4,
-//     patio: true,
-// });
+const midway = new Restaurant({
+    name: "The Midway",
+    address: "552 Flat Shoals Ave SE, Atlanta, GA 30316",
+    rating: 4.4,
+    patio: true,
+});
+
+const dakotaBlue = new Restaurant({
+    name: "Dakota Blue",
+    address: "454 Cherokee Ave SE, Atlanta, GA 30312",
+    rating: 4.2,
+    patio: true,
+});
 
 Owner.remove({})
     .then(() => Owner.create([lindsey, betty]))
+    .then(() => Restaurant.create([midway, dakotaBlue]))
     .then(() => {
         console.log("seeded successfully");
         mongoose.connection.close();

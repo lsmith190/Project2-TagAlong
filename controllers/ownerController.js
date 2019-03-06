@@ -28,14 +28,9 @@ const ownerController = {
         Owner.findByIdAndUpdate(req.params.ownerId, req.body, { new: true }).then(() => {
             res.redirect(`/${req.params.ownerId}`)
         })
-
-        // .then(owner => {
-
-        //     res.render('owners/show', { owner })
-        // })
     },
     delete: (req, res) => {
-        Owner.findByIdAndDelete(req.params.ownerId).then(owner => {
+        Owner.findByIdAndDelete(req.params.ownerId).then(() => {
             res.redirect('/')
         })
     }

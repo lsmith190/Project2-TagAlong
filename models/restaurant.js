@@ -5,7 +5,8 @@ const RestaurantSchema = new Schema({
     name: String,
     address: String,
     rating: Number,
-    patio: Boolean
+    patio: Boolean,
+    imgLink: String
 })
 
 

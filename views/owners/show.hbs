@@ -20,5 +20,7 @@
 
 
 <a class="btn btn-light" href="/{{owner.id}}/edit">Edit</a>
+<form class="delete-form"action="/{{owner.id}}?_method=DELETE" method="POST">
+<input class="btn btn-light" type="submit" value="DELETE">
+</form>
 
-<a class="btn btn-light" href="/">Delete</a>

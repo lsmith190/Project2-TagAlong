@@ -2,36 +2,42 @@ const Owner = require('../models/owner.js')
 
 const ownerController = {
     index: (req, res) => {
+        // console.log(res)
         Owner.find().then(owners => {
-            res.render('index', { owners })
+            console.log(owners)
+            res.render('owners/index', { owners })
         })
     },
     new: (req, res) => {
         res.render('new')
     },
-    // create: (req, res) => {
-    //     Owner.create(req.body).then(owner => {
-    //         res.redirect("/")
-    //     })
-
     create: (req, res) => {
         Owner.create(req.body).then(owner => {
-            res.redirect("/owner")
+            res.render("owners/show", { owner })
         })
     },
-    show: ('/owners', (req, res) => {
-        res.send('Show owners here')
-    }),
-
-    edit: ('/edit', (req, res) => {
-        // res.send('Edit owners here')
-        res.render('edit')
-    }),
+    show: (req, res) => {
+        Owner.findById(req.params.ownerId).then(owner => {
+            res.render('owners/show', { owner })
+        })
+    },
+    edit: (req, res) => {
+        Owner.findById(req.params.ownerId).then(owner => {
+            res.render('owners/edit', { owner })
+        })
+    },
     update: (req, res) => {
-        console.log('updated owner')
+        Owner.findByIdAndUpdate(req.params.ownerId, req.body, { new: true }).then(owner => {
+
+                res.render('owners/show', { owner })
+            })
+            // console.log('updated owner')
     },
     delete: (req, res) => {
-        console.log('delete owner')
+        Owner.findByIdAndDelete(req.params.ownerId).then(owner => {
+                res.redirect('/')
+            })
+            // console.log('delete owner')
     }
 }
 

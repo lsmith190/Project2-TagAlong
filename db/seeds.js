@@ -8,7 +8,7 @@ const lindsey = new Owner({
     name: "Lindsey Smith",
     age: 24,
     city: "Atlanta, GA",
-    petName: "Kenzie",
+    petName: [],
     handle: "N/A",
     imgLink: ""
 });
@@ -17,7 +17,7 @@ const betty = new Owner({
     name: "Betty Rozema",
     age: 25,
     city: "Atlanta, GA",
-    petName: "Bando",
+    petName: [],
     handle: "themamabetty",
     imgLink: ""
 });

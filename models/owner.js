@@ -6,7 +6,8 @@ const PetSchema = new Schema({
     age: Number,
     city: String,
     breed: String,
-    ownerName: String
+    ownerName: String,
+    imgLink: String
 })
 
 const OwnerSchema = new Schema({
@@ -14,7 +15,8 @@ const OwnerSchema = new Schema({
     age: Number,
     city: String,
     petName: [PetSchema],
-    handle: String
+    handle: String,
+    imgLink: String
 })
 
 

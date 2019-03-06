@@ -25,10 +25,14 @@ const ownerController = {
         })
     },
     update: (req, res) => {
-        Owner.findByIdAndUpdate(req.params.ownerId, req.body, { new: true }).then(owner => {
-
-            res.render('owners/show', { owner })
+        Owner.findByIdAndUpdate(req.params.ownerId, req.body, { new: true }).then(() => {
+            res.redirect(`/${req.params.ownerId}`)
         })
+
+        // .then(owner => {
+
+        //     res.render('owners/show', { owner })
+        // })
     },
     delete: (req, res) => {
         Owner.findByIdAndDelete(req.params.ownerId).then(owner => {

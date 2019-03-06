@@ -1,4 +1,4 @@
-const Pet = require('../models/owner.js')
+// const Pet = require('../models/owner.js')
 
 
-module.exports = petController
+// module.exports = petController

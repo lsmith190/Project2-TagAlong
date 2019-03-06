@@ -2,9 +2,7 @@ const Owner = require('../models/owner.js')
 
 const ownerController = {
     index: (req, res) => {
-        // console.log(res)
         Owner.find().then(owners => {
-            console.log(owners)
             res.render('owners/index', { owners })
         })
     },
@@ -29,15 +27,13 @@ const ownerController = {
     update: (req, res) => {
         Owner.findByIdAndUpdate(req.params.ownerId, req.body, { new: true }).then(owner => {
 
-                res.render('owners/show', { owner })
-            })
-            // console.log('updated owner')
+            res.render('owners/show', { owner })
+        })
     },
     delete: (req, res) => {
         Owner.findByIdAndDelete(req.params.ownerId).then(owner => {
-                res.redirect('/')
-            })
-            // console.log('delete owner')
+            res.redirect('/')
+        })
     }
 }
 

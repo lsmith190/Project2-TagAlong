@@ -1,0 +1,40 @@
+<div align="center">
+<form action="/{{pet.id}}?_method=PUT" method="POST" class="editPet">
+    <div>
+        <label for="name">Name</label>
+        <br>
+        <input type="text" name="name" id="name" value="{{pet.name}}">
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <br>
+        <input type="number" name="age" id="age" value="{{pet.age}}">
+    </div>
+    <div>
+        <label for="city">City</label>
+        <br>
+        <input type="text" name="city" id="city" value="{{pet.city}}">
+    </div>
+    <div>
+        <label for="breed">Breed</label>
+        <br>
+        <input type="text" name="breed" id="breed" value="{{pet.breed}}">
+    </div>
+<div>
+        <label for="favHobby">Favorite Hobby</label>
+        <br>
+        <input type="text" name="favHobby" id="favHobby" value="{{pet.favHobby}}">
+    </div>
+    <div>
+        <label for="ownerName">Owner Name</label>
+        <br>
+        <input type="text" name="ownerName" id="ownerName" value="{{pet.ownerName}}">
+    </div>
+     <div>
+        <label for="image">Image Link</label>
+        <br>
+        <input type="text" name="imgLink" id="imgLink" value="{{pet.imgLink}}">
+    </div>
+    <input type="submit" value="Submit">
+</form>
+</div>

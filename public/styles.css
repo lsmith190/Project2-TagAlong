@@ -1,8 +1,8 @@
 .newOwner,
 .newRestaurant,
-.editOwner, .editRestaurant {
-    padding: 20px;
-    margin: 50px;
+.editOwner, .editRestaurant, .newPet, .editPet {
+    padding: 10px;
+    margin: 30px;
     color: white;
     font-size: 20px;
 }

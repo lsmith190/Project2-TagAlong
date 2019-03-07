@@ -1,0 +1,30 @@
+<div align="center" style="color:white;">
+<h3>{{pet.name}}<h3>
+<br>
+<img class="shop-img-banner" src={{pet.imgLink}} alt="{{pet.name}}" height="200" width="200">
+</div>
+
+
+<div align="center" style="color:white;">
+
+<h4>{{pet.age}} years young</h4>
+
+<h4>{{pet.city}}</h4>
+
+<h4>Breed: {{pet.breed}}</h4>
+
+<h4>My favorite hobby is {{pet.favHobby}}!</h4>
+
+<h4>I belong to {{pet.ownerName}}!</h4>
+
+
+</div>
+
+
+<div class="text-center">
+{{!-- <a class="btn btn-light" href="/restaurants/{{restaurant.id}}/edit">Edit</a> --}}
+
+<form class="delete-form"action="/pets/{{pet.id}}?_method=DELETE" method="POST">
+<input class="btn btn-light" type="submit" value="Delete">
+</form>
+</div>

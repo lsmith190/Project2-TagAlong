@@ -1,14 +1,14 @@
 const mongoose = require('../db/connection.js')
 const Schema = mongoose.Schema
 
-const OwnerSchema = new Schema({
+const PetSchema = new Schema({
     name: String,
     age: Number,
     city: String,
-    petName: String,
-    handle: String,
+    breed: String,
+    favHobby: String,
+    ownerName: String,
     imgLink: String
 })
 
-
-module.exports = mongoose.model('Owner', OwnerSchema)
+module.exports = mongoose.model('Pet', PetSchema)

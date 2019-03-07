@@ -10,7 +10,7 @@ const lindsey = new Owner({
     city: "Atlanta, GA",
     petName: "Kenzie",
     handle: "N/A",
-    imgLink: "https://imgur.com/8K8vtaO"
+    imgLink: "/images/LindseyKenzie.jpg"
 });
 
 const betty = new Owner({
@@ -19,7 +19,7 @@ const betty = new Owner({
     city: "Atlanta, GA",
     petName: "Bando",
     handle: "themamabetty",
-    // imgLink: ""
+    imgLink: "/images/BettyBando.jpg"
 });
 
 const kenzie = new Pet({
@@ -29,7 +29,7 @@ const kenzie = new Pet({
     breed: "Mutt",
     favHobby: "Staring at walls",
     ownerName: "Lindsey Smith",
-    imgLink: "file:///Users/lindsey/Downloads/FullSizeR%20(3).jpg"
+    imgLink: "/images/Kenzie.jpg"
 });
 
 const bando = new Pet({
@@ -39,7 +39,7 @@ const bando = new Pet({
     breed: "German Shepherd",
     favHobby: "Howling",
     ownerName: "Betty Rozema",
-    // imgLink = ""
+    imgLink: "/images/Bando.jpg"
 });
 
 const midway = new Restaurant({
@@ -47,7 +47,7 @@ const midway = new Restaurant({
     address: "552 Flat Shoals Ave SE, Atlanta, GA 30316",
     rating: 4.4,
     patio: "Yes",
-    imgLink: "https://footiemob.club/wp-content/uploads/2018/01/The_Midway_Magnum-640x410.jpg"
+    imgLink: "/images/Midway.png"
 });
 
 const dakotaBlue = new Restaurant({
@@ -55,6 +55,7 @@ const dakotaBlue = new Restaurant({
     address: "454 Cherokee Ave SE, Atlanta, GA 30312",
     rating: 4.2,
     patio: "Yes",
+    imgLink: "/images/DakotaBlue.png"
 });
 
 Owner.remove({})

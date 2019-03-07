@@ -1,7 +1,7 @@
 <div align="center" style="color:white;">
 <h3>{{restaurant.name}}<h3>
 <br>
-<img class="shop-img-banner" src={{restaurant.imgLink}} alt="{{restaurant.name}}" height="200" width="200">
+<img class="img-banner" src={{restaurant.imgLink}} alt="{{restaurant.name}}" height="200" width="200">
 </div>
 
 
@@ -17,7 +17,6 @@
 
 
 <div class="text-center">
-{{!-- <a class="btn btn-light" href="/restaurants/{{restaurant.id}}/edit">Edit</a> --}}
 
 <form class="delete-form"action="/restaurants/{{restaurant.id}}?_method=DELETE" method="POST">
 <input class="btn btn-light" type="submit" value="Delete">

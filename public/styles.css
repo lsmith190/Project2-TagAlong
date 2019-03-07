@@ -31,3 +31,11 @@ body {
 .allOwners, .allRestaurants {
     padding: 100px;
 }
+
+.review-img {
+    border-radius: 30%;
+}
+
+.img-banner {
+    border-radius: 30%;
+}

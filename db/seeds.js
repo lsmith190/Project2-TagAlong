@@ -52,3 +52,5 @@ Owner.remove({})
         mongoose.connection.close();
     })
     .catch(err => console.log(err, "error!"));
+
+// .then(() => mongoose.connection.close());

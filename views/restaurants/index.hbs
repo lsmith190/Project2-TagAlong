@@ -1,1 +1,11 @@
-{{restaurants}}
+<a class="btn btn-light" href="/restaurants/new">+ Add Restaurant</a>
+
+<div>
+{{#each restaurants}}
+
+<h4>
+<a href="/{{_id}}">{{name}}</a>
+</h4>
+
+{{/each}}
+</div>

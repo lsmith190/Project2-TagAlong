@@ -46,14 +46,14 @@ const midway = new Restaurant({
     name: "The Midway",
     address: "552 Flat Shoals Ave SE, Atlanta, GA 30316",
     rating: 4.4,
-    patio: true,
+    patio: "Yes",
 });
 
 const dakotaBlue = new Restaurant({
     name: "Dakota Blue",
     address: "454 Cherokee Ave SE, Atlanta, GA 30312",
     rating: 4.2,
-    patio: true,
+    patio: "Yes",
 });
 
 Owner.remove({})

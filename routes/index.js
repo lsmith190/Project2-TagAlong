@@ -9,6 +9,12 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/restaurants', restaurantController.index)
+router.get('/restaurants/new', restaurantController.new)
+router.post('/restaurants', restaurantController.create)
+router.get('/restaurants/:restaurantId', restaurantController.show)
+router.get('/restaurants/:restaurantId/edit', restaurantController.edit)
+router.put('/restaurants/:restaurantId', restaurantController.update)
+router.delete('/restaurants/:restaurantId', restaurantController.delete)
 
 router.get('/owners', ownerController.index)
 router.get('/new', ownerController.new)
@@ -25,13 +31,5 @@ router.delete('/:ownerId', ownerController.delete)
 // router.get('/:petId/edit', petController.edit)
 // router.put('/:petId', petController.update)
 // router.delete('/', petController.delete)
-
-
-router.get('/restaurants/new', restaurantController.new)
-router.post('/restaurants/:restaurantId', restaurantController.create)
-router.get('/restaurants/:restaurantId', restaurantController.show)
-router.get('/restaurants/:restaurantId/edit', restaurantController.edit)
-router.put('/restaurants/:restaurantId', restaurantController.update)
-router.delete('/restaurants/:restaurantId', restaurantController.delete)
 
 module.exports = router

@@ -1,25 +1,25 @@
-<div>
-{{owner.name}}
-</div>
-
-<div>
-{{owner.age}}
-</div>
-
-<div>
-{{owner.city}}
-</div>
-
-<div>
-{{owner.handle}}
-</div>
-
+<div align="center" style="color:white;">
+<h3>{{owner.name}}<h3>
+<br>
 <img class="shop-img-banner" src={{owner.imgLink}} alt="{{owner.name}}" height="200" width="200">
+</div>
+
+
+<div align="center" style="color:white;">
+
+<h4>{{owner.age}} years young</h4>
+
+<h4>From: {{owner.city}}</h4>
+
+<h4>Contact me at @{{owner.handle}}!</h4>
+
+</div>
+
 
 <div class="text-center">
 <a class="btn btn-light" href="/{{owner.id}}/edit">Edit</a>
 
 <form class="delete-form"action="/{{owner.id}}?_method=DELETE" method="POST">
-<input class="btn btn-light" type="submit" value="DELETE">
+<input class="btn btn-light" type="submit" value="Delete">
 </form>
 </div>

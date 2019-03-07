@@ -11,7 +11,7 @@ const restaurantController = {
     },
     create: (req, res) => {
         Restaurant.create(req.body).then(restaurant => {
-            res.render("restaurants/show", { restaurant })
+            res.redirect('/')
         })
     },
     show: (req, res) => {

@@ -7,7 +7,7 @@ const Restaurant = require("../models/restaurant.js");
 const lindsey = new Owner({
     name: "Lindsey Smith",
     age: 24,
-    city: "Atlanta, GA",
+    city: "Atlanta",
     petName: [],
     handle: "N/A",
     imgLink: ""
@@ -16,7 +16,7 @@ const lindsey = new Owner({
 const betty = new Owner({
     name: "Betty Rozema",
     age: 25,
-    city: "Atlanta, GA",
+    city: "Atlanta",
     petName: [],
     handle: "themamabetty",
     imgLink: ""
@@ -27,7 +27,19 @@ const betty = new Owner({
 //     age: 3,
 //     city: "Atlanta, GA",
 //     breed: "Mutt",
-//     ownerName: "Lindsey Smith"
+//     favHobby: "Staring at walls",
+//     ownerName: "Lindsey Smith",
+//     imgLink: ""
+// });
+
+// const bando = new Pet({
+//     name: "Bando",
+//     age: 5,
+//     city: "Atlanta",
+//     breed: "German Shepherd",
+//     favHobby: "Howling",
+//     ownerName: "Betty Rozema",
+//     imgLink = ""
 // });
 
 const midway = new Restaurant({

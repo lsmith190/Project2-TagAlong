@@ -18,7 +18,7 @@ router.get('/:ownerId/edit', ownerController.edit)
 router.put('/:ownerId', ownerController.update)
 router.delete('/:ownerId', ownerController.delete)
 
-// router.get('/pets', petController.index)
+// // router.get('/pets', petController.index)
 // router.get('/newpet', petController.new)
 // router.post('/:petId', petController.create)
 // router.get('/:petId', petController.show)

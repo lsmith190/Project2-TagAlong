@@ -1,28 +1,25 @@
-<div>
-{{restaurant.name}}
-</div>
-
-<div>
-{{restaurant.address}}
-</div>
-
-<div>
-{{restaurant.rating}}
-</div>
-
-<div>
-{{restaurant.patio}}
-</div>
-
-<div>
-{{restaurant.imgLink}}
+<div align="center" style="color:white;">
+<h3>{{restaurant.name}}<h3>
+<br>
+<img class="shop-img-banner" src={{restaurant.imgLink}} alt="{{restaurant.name}}" height="200" width="200">
 </div>
 
 
- <div>
-        <a class="btn btn-light" href="/restaurants/{{restaurant.id}}/edit">EDIT</a>
-        
-        <form class="delete-form"action="/restaurants/{{restaurant.id}}?_method=DELETE" method="POST">
-            <input class="btn btn-light" type="submit" value="DELETE">
-        </form>
+<div align="center" style="color:white;">
+
+<h4>{{restaurant.address}}</h4>
+
+<h4>{{restaurant.rating}} Stars</h4>
+
+<h4>Outdoor patio: {{restaurant.patio}}</h4>
+
+</div>
+
+
+<div class="text-center">
+{{!-- <a class="btn btn-light" href="/restaurants/{{restaurant.id}}/edit">Edit</a> --}}
+
+<form class="delete-form"action="/restaurants/{{restaurant.id}}?_method=DELETE" method="POST">
+<input class="btn btn-light" type="submit" value="Delete">
+</form>
 </div>

@@ -15,7 +15,7 @@ const OwnerSchema = new Schema({
     name: String,
     age: Number,
     city: String,
-    petName: [PetSchema],
+    petName: String,
     handle: String,
     imgLink: String
 })

@@ -1,24 +1,30 @@
-
-<form action="/{{restaurant.id}}?_method=PUT" method="POST">
+<div align="center">
+<form action="/{{restaurant.id}}?_method=PUT" method="POST" class="editRestaurant">
     <div>
         <label for="name">Name</label>
+        <br>
         <input type="text" name="name" id="name" value="{{restaurant.name}}">
     </div>
     <div>
         <label for="address">Address</label>
+        <br>
         <input type="text" name="restaurant" id="restaurant" value="{{restaurant.address}}">
     </div>
     <div>
         <label for="rating">Rating</label>
+        <br>
         <input type="number" name="rating" id="rating" value="{{restaurant.rating}}">
     </div>
     <div>
         <label for="patio">Patio</label>
+        <br>
         <input type="text" name="patio" id="patio" value="{{restaurant.patio}}">
     </div>
      <div>
         <label for="image">Image Link</label>
+        <br>
         <input type="text" name="imgLink" id="imgLink" value="{{restaurant.imgLink}}">
     </div>
     <input type="submit" value="Submit">
 </form>
+</div>

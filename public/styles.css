@@ -1,6 +1,6 @@
 .newOwner,
 .newRestaurant,
-.editOwner {
+.editOwner, .editRestaurant {
     padding: 20px;
     margin: 50px;
     color: white;
@@ -28,6 +28,6 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
 }
 
-.allOwners {
+.allOwners, .allRestaurants {
     padding: 100px;
 }

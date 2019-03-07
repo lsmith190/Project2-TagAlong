@@ -1,11 +1,21 @@
 <a class="btn btn-light" href="/restaurants/new">+ Add Restaurant</a>
 
-<div align="center">
+<div align="center" class="allRestaurants">
 {{#each restaurants}}
-
-<h4>
-<a href="/restaurants/{{_id}}" style="color:white;">{{name}}, {{address}}</a>
-</h4>
-
-{{/each}}
+        <div class="row review">
+            <div class="col-sm-4">
+                <img class="review-img" src="{{imgLink}}" height="150" width="150">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4>
+                            <a href="/restaurants/{{id}}" style="color:white;">{{name}}</a>
+                        </h4>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    {{/each}}
 </div>

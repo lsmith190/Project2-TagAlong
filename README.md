@@ -14,7 +14,9 @@
 <br>
 <a href="https://imgur.com/RTkHZRM"><img src="https://i.imgur.com/RTkHZRM.png" title="source: imgur.com" /></a>
 <br>
-<a href="https://imgur.com/RTkHZRM"><img src="https://i.imgur.com/RTkHZRM.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/MzCBWyu"><img src="https://i.imgur.com/MzCBWyu.png?1" title="source: imgur.com" /></a>
+<br>
+<a href="https://imgur.com/ZhpHo9A"><img src="https://i.imgur.com/ZhpHo9A.png?1" title="source: imgur.com" /></a>
 <br>
 
 

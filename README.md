@@ -1,6 +1,6 @@
 # Project2-TagAlong
 
-##Overview
+## Overview
 "Tag Along" is an online application, made for dog owners, seeking restaurants/bars where their four-legged children can join! The application has full CRUD capability, where users have the ability to add themselves, their pets, and restaurants they know of where they can bring their pet. Users will have the ability to view the addresses of each restaurant to determine what city the restaurant is located in. 
 
 ## Project Links

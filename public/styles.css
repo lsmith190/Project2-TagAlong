@@ -1,10 +1,14 @@
 .newOwner,
 .newRestaurant,
-.editOwner, .editRestaurant, .newPet, .editPet {
+.editOwner,
+.editRestaurant,
+.newPet,
+.editPet {
     padding: 10px;
     margin: 30px;
     color: white;
     font-size: 20px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .homeBtn {
@@ -15,7 +19,7 @@
 
 .ownerBtn {
     text-align: center;
-    padding: 100px 100px 100px 100px;
+    padding: 50px;
 }
 
 .placeholderImg {
@@ -28,14 +32,14 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
 }
 
-.allOwners, .allRestaurants {
+.allOwners,
+.allRestaurants,
+.allPets {
     padding: 100px;
+    font-family: 'Anton', sans-serif;
 }
 
-.review-img {
-    border-radius: 30%;
-}
-
+.review-img,
 .img-banner {
     border-radius: 30%;
 }

@@ -36,10 +36,20 @@ body {
 .allRestaurants,
 .allPets {
     padding: 100px;
-    font-family: 'Anton', sans-serif;
 }
 
 .each-img,
 .img-banner {
     border-radius: 30%;
+}
+
+.showOwner,
+.showRestaurant,
+.showPet {
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+}
+
+.delete-form {
+    padding: 10px;
 }

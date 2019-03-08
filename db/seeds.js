@@ -50,17 +50,17 @@ const midway = new Restaurant({
     imgLink: "/images/Midway.png"
 });
 
-const dakotaBlue = new Restaurant({
-    name: "Dakota Blue",
-    address: "454 Cherokee Ave SE, Atlanta, GA 30312",
-    rating: 4.2,
+const luckyBar = new Restaurant({
+    name: "Lucky Dog Bark & Brew",
+    address: "2220 Thrift Rd, Charlotte, NC 28208",
+    rating: 4.6,
     patio: "Yes",
-    imgLink: "/images/DakotaBlue.png"
+    imgLink: "/images/LuckyBar.png"
 });
 
 Owner.remove({})
     .then(() => Owner.create([lindsey, betty]))
-    .then(() => Restaurant.create([midway, dakotaBlue]))
+    .then(() => Restaurant.create([midway, luckyBar]))
     .then(() => Pet.create([kenzie, bando]))
     .then(() => {
         console.log("seeded successfully");
